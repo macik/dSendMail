@@ -28,16 +28,19 @@ Other credits:
 Public properties
 =================
 
+```php
 $m->error (Read-only property)
 $m->delay (default: 1. Seconds of delay when mass-mailing)
 
 $m->debug (dumping-debug)
 $m->logFolder (default: false. fill it if you want to save logs)
 $m->logFile   (default: false. fill it if you want to save logs)
+```
 
 Public methods
 ==============
 
+```php
 $m->easyMail   ($to, $subject, $message[, $from[, $html[, $attach]]])
 $m->setPriority($priority)   (1=High, 3=Normal, 5=Low)
 $m->setCharset ($charset)
@@ -63,6 +66,7 @@ $m->sendThroughHotMail("username@hotmail.com", "password");
 
 $m->allowDupe() (Allow duplicated targets)
 $m->blockDupe() (Automatically remove duplicated targets in To/Cc/Bcc list - Default)
+```
 
 Note: see example files to get real usage cases.
 
